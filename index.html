@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Kormos László</title>
+    <link rel="stylesheet" href="custom.css">
+    
+
+</head>
+<body>
+<div class="container">  
+    <form id="contact" action="process.php" method="post">
+      <h3>Kérlek küldj üzenetet</h3>
+      
+      <fieldset>
+        <input placeholder="Név" type="text" tabindex="1"  name="name" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Email" type="email" tabindex="2" name="email" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Tárgy" type="subject" tabindex="3" name="subject" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Üzenet" tabindex="4" id="message" name="message" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Küldés</button>
+      </fieldset>
+      
+    </form>
+  </div>
+</body>
